@@ -202,5 +202,71 @@ nav{
 }
 
 /*----------------------
-     collection section 
+     join US section 
 ------------------------ */
+.join-us{
+    clear: right;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.left{
+    margin: 0px auto;
+}
+.right{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.right h1{
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 60px;
+    padding: 5px 0px;
+    margin: 15px 0px;
+}
+.right p{
+    font-size: 16px;
+    line-height: 28px;
+    padding: 5px 0px;
+    margin-bottom: 15px;
+}
+
+
+/* .---------------------
+        footer section
+------------------------- */
+
+
+footer{
+    margin-top: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px 100px;
+}
+footer h1{
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+   
+}
+footer p{
+    font-size: 16px;
+}
+
+.social-media{
+    margin:10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.social-media img{
+    width: 32px;
+    height: 32px;
+    padding: 5px 10px;
+}
