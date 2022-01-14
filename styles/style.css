@@ -134,7 +134,9 @@ nav{
 /*----------------------
      collection section 
 ------------------------ */
-
+.for-collect{
+    width: 1050px;
+}
 .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -176,6 +178,12 @@ nav{
 }
 .card-rating{
     margin-top: 5px;
+}
+.filled{
+    color: gold;
+}
+.empty{
+    color: rgb(170, 175, 170);
 }
 .card-rating p{
     padding: 0px 10px;
