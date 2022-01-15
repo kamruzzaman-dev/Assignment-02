@@ -62,8 +62,10 @@
     font-size: 16px;
     line-height: 24px;
     padding: 15px 24px;
-    color: #E02C6D;;
-
+    color: #E02C6D;
+}
+.navigation>li>a:hover{
+    color: black;
 }
 
 .navigation > li > i{
@@ -220,9 +222,13 @@
 }
 .card:hover{
     transform: scale(1.1);
-    transition: 1s ease-in-out;
+    transition: 1.4s ease-in-out;
     cursor: pointer;
     background-color: #f599bb57;
+}
+.card:hover .card-price{
+    color: #E02C6D ;
+    transition: 1.4s ease-in-out;
 }
 .card img{
     width: 300px;
@@ -230,6 +236,7 @@
 .card-name{
     font-size: 28px;
     margin: 15px 0px;
+    text-transform: capitalize;
 }
 .card-price{
     font-family: Inter;
@@ -265,6 +272,9 @@
     margin: 20px 60px;
     color:#E02C6D;
     
+}
+.see-more:hover{
+    color: black;
 }
 .see-more p{
     display: inline;
