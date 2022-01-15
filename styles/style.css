@@ -64,9 +64,11 @@ nav{
 /*--------------------
          bannar
 ---------------------- */
+
 .firstpage-size{
     height: 700px;
     min-height: 500px;
+    border: 2px red solid;
 }
 .bannar{
     height: 500px;
@@ -121,9 +123,10 @@ nav{
 .company{
     max-width: 1110px;
     min-height: 110px;
-    margin: 20px auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -132,6 +135,7 @@ nav{
     width: 99.12px;
     height: 39.61px;
     text-align: center;
+    margin: 0px auto;
 }
 
 /*----------------------
