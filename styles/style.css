@@ -112,15 +112,21 @@
     display: flex;
     align-items: flex-start;
     align-items: center;
-    padding: 10px 44px;
+    padding: 7px 41px;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     border-radius: 41px;
     background-color: #E02C6D;
     color: white;
+    border: 3px solid #E02C6D ;
+    cursor: pointer;
 }
 
+.primary-button:hover{
+    background-color: white;
+    color:  #E02C6D;
+}
 .letter-gap{
     margin-left: 10px;
 }
