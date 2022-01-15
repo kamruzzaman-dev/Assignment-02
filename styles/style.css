@@ -307,6 +307,48 @@
     padding: 5px 0px;
     margin-bottom: 15px;
 }
+/* -----------------------
+        mobile contant
+-------------------------- */
+.mobile-content{
+    max-width: 1050px;
+    margin: 0px auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap:30px
+}
+
+.mobile{
+    width: 100%;
+    display: flex;
+}
+.mobile-left{
+    display: flex;
+    width: 100%;
+    margin: 5px auto;
+}
+.mobile-left img{
+    max-width: 200px;
+    height: 262px;
+    margin: 5px auto;
+}
+
+.mobile-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px auto;
+}
+
+.mobile-right img{
+    max-width: 186px;
+    height: 136px;
+    margin: 5px auto;
+}
+
 
 /* --------------------
         footer
@@ -376,7 +418,7 @@ footer p{
     .top-section{
         height: 800px;
     }
-    .collections ,.join-us , .bannar{
+    .collections ,.join-us , .bannar , .mobile-content{
         grid-template-columns: repeat(1, 1fr);
     }
     .company {
@@ -401,6 +443,19 @@ footer p{
         padding: 0px 0px;
     }
     .right-bannar{
+    }
+
+    .mobile{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .mobile-right img{
+        margin: 0px auto;
+    }
+    .mobile-left img{
+        margin: 0px auto;
     }
 }
 
