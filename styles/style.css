@@ -369,7 +369,7 @@
 
 
 .mobile-left img{
-    max-width: 194px;
+    max-width: 200px;
     height: 262px;
     margin: 5px auto;
 }
@@ -383,7 +383,7 @@
 }
 
 .mobile-right img{
-    max-width: 180px;
+    max-width: 186px;
     height: 136px;
     margin: 5px auto;
     /* box-shadow: 1px 5px 20px black; */
