@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 
 
 *{
@@ -9,26 +11,26 @@
 /* ---------------
     common class
 ------------------ */
-.container{
-    width: 1500px;
-    margin: 0 auto;
-    padding:0 30px;
-}
+
+
 .primary-color{
     color: #E02C6D;
 }
-/* ----------------
-        navbar  
--------------------*/
 
-nav{
+
+/*---------------------------
+         navber and header 
+----------------------------- */
+
+.navbar{
     display: flex;
     justify-content: space-between;
-    background-color: red;
     align-items: center;
+    background-color: red;
     height: 80px;
+    padding: 0px 20px;
 }
-.logo h3{
+.logo{
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -39,14 +41,13 @@ nav{
     display: flex;
     align-items: center;
 }
-.navigation li {
+.navigation li{
     list-style: none;
-    margin: 10px;
 }
-
-.navigation li a {
+.navigation> li > a{
+    text-transform: capitalize;
     text-decoration: none;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -54,33 +55,35 @@ nav{
     padding: 15px 24px;
     color: black;
 }
-.navigation li i{
+
+.navigation > li > i{
     padding: 10px 14px;
     font-size: 24px;
 }
 
 
-
 /*--------------------
          bannar
 ---------------------- */
+.top-section{
+    height: 677px;
+    background-color: blanchedalmond;
+}
 
-.firstpage-size{
-    height: 700px;
-    min-height: 500px;
-    border: 2px red solid;
-}
 .bannar{
-    height: 500px;
+	padding-top: 100px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: space-around;
 }
+
 .left-bannar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 40px;
+    padding: 40px;
 }
 
 .left-bannar h1{
@@ -119,14 +122,34 @@ nav{
     background-image: url(/images/CircleDesign.svg);
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid red;
+    overflow: hidden;
 }
+
+
+#camera{
+    width: 300px;
+	height: 300px;
+	transition: width 2s, height 2s, transform 2s;
+}
+.top-section:hover #camera{
+    width: 440px;
+	height: 414px;
+	transform: rotate(360deg);
+}
+
+
+/*-------------------------
+     company and sponser
+--------------------------- */
+
 .company{
     max-width: 1110px;
     min-height: 110px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -138,12 +161,15 @@ nav{
     margin: 0px auto;
 }
 
-/*----------------------
-     collection section 
------------------------- */
-.for-collect{
-    max-width: 1050px;
+
+/*--------------------
+     collection
+---------------------- */
+.collection-title{
+    text-align: center;
+    padding: 10px;
 }
+
 .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -219,9 +245,14 @@ nav{
     line-height: 24px;
 }
 
-/*----------------------
-     join US section 
------------------------- */
+/*--------------------
+     feature
+---------------------- */
+
+.feature{
+
+}
+
 .join-us{
     clear: right;
     margin-top: 100px;
@@ -229,24 +260,32 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap:30px;
-
+    
 }
 .left{
     margin: 0px auto;
+    padding: 20px 40px;
+}
+.left img{
+    width: 404px;
+    height: 270px;
 }
 .right{
+    width: 404px;
+    height: 270px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    /* padding: 20px 40px; */
 }
 .right h1{
     font-weight: bold;
     font-size: 38px;
-    line-height: 60px;
+    line-height: 40px;
     padding: 5px 0px;
-    margin: 15px 0px;
+    /* margin: 15px 0px; */
 }
 .right p{
     font-size: 16px;
@@ -255,13 +294,14 @@ nav{
     margin-bottom: 15px;
 }
 
+/* --------------------
+        footer
+----------------------- */
 
-/* .---------------------
-        footer section
-------------------------- */
 
-
-footer{
+.footer-section{
+    width: 95%px;
+    margin: 0px auto;
     margin-top: 100px;
     text-align: center;
     background-color: black;
@@ -290,3 +330,62 @@ footer p{
     height: 32px;
     padding: 5px 10px;
 }
+
+/* -------------------
+        Tab
+---------------------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .company{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .navigation> li > a{
+        padding: 15px 14px;
+    }
+    .navigation > li > i{
+        padding: 10px 8px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+}
+
+
+
+/* -------------------
+        Mobile
+---------------------- */
+@media only screen and (max-width:688px) {
+    .top-section{
+        height: 800px;
+        background-color: blue;
+    }
+    .collections ,.join-us , .bannar{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .company {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navigation{
+        display: none;
+    }
+    .left img{
+        width: 299px;
+        height: 188px;
+    }
+    .right{
+        width: 311px;
+        height: 200px;
+    }
+
+    .bannar{
+        padding: 0px 0px;
+    }
+    .right-bannar{
+    }
+}
+
+
