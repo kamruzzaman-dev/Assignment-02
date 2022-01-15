@@ -443,6 +443,10 @@ footer p{
     .logo{
         font-size: 20px;
     }
+    .details,
+    .right{
+        padding: 15px;
+    }
 }
 
 
